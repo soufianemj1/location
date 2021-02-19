@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.active {
+    background-color:#17202A ;
+}
+li:hover {
+    background-color:#17202A;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 50px;
+    background-color: #2B346A;
+}
+.navbar {
+    display: flex;
+    justify-content:center;
+    list-style: none;
+}
+.navbar li{
+    margin-left: 30px;
+   
+}
+.navbar li a{
+
+    color: #FBB544;
+    text-decoration: none;
+}
+.header img{
+    width: 60px;
+    height: 60px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    
+}
+
+.main p{
+    margin-left: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+.main img{
+    height: 400px;
+    width: 480px;
+}
+.footer {
+    background-color: #2B346A;  
+    display: flex;
+    justify-content: space-between;
+}
+.footer-items{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+   
+}
+.paragraphe{
+    margin-left: 10px;
+}
+.icones {
+    padding-top: 15px;
+}
+.aboutus{
+    color: white;
+    font-size: 18px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    width: 430PX;
+    padding: 5PX;
+    
+}
+strong {
+    display: flex;
+    justify-content: center;
+}
+.map {
+padding: 20px;
+}
+/* Gallery */
+.flex-container{
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+  .flex-container::-webkit-scrollbar { 
+          display:none; }
+
+.flex-item {
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 15px;
+    margin-top: 50PX;
+    margin-bottom: 50px;
+    }
+    .flex-item:hover{
+        transform: scale(1.1);
+    }
+    h1{
+    text-align: center;
+    color: #2B346A;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    }
+    .cars {
+        margin-top: 40px;
+    }
+   /* contact */
+
+
+  .fromulaire{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  input[type=submit] {
+    width: 20%;
+    background-color: #2B346A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    margin-left: 40%;
+  }
+  input[type=text],[type=email] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  textarea{
+      width: 100%;
+  }
+  /* reservation */
+  .type {
+      font-size: 25px;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #2B346A;
+      font-style:italic;
+  } 
+  .flex-item1 {
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 15px;
+    margin-top: 50PX;
+    margin-bottom: 14px;
+    border: solid 3px #2B346A ;
+
+  }
+  .flex-item1:hover{
+    transform: scale(1.1);
+  }
+  #car-select {
+    justify-content: center;
+  }
+  h3 {
+      text-align: center;
+      font-size: 17px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #2B346A;
+  }
+.choix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+.h31 {
+    padding-top: 40px;
+}
+.days {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.radios {
+    padding: 15px;
+}
+#navId{
+    width: 100%;
+}
+/* responsive */
+
+@media only screen and (max-width: 800px){
+    .header {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #navId{
+        width: 100%;
+    }
+    li{
+        margin-left: 0;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar li{
+        margin-left: 7px;
+       
+    }
+    a{
+        font-size: 10px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main img{
+        margin-left: -12px;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .main  p{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .about{
+        width: 100%;
+    }
+    .map {
+        margin-left: 18px;
+    }
+}
+
+      
+
+  
+    
+        
+
+ 
