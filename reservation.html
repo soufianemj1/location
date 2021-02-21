@@ -25,38 +25,38 @@
        <!-- main -->
        <h1 class="cars">what's your choice</h1>
   <div class="flex-container">
-         <div class="genre"><img class="flex-item1" src="cars/car1.jpg" alt=""> <p class="type">citadine</p></div>
-         <div class="genre"><img class="flex-item1" src="cars/car5.jpg" alt=""> <p class="type">compact</p></div>
-         <div class="genre"><img class="flex-item1" src="cars/car4.jpg" alt=""> <p class="type">SUV</p></div>
-         <div class="genre"><img class="flex-item1" src="motos/bike1.jpg" alt=""> <p class="type">Bikes</p></div>
-         <div class="genre"><img class="flex-item1" src="trucks/t1.jpg" alt=""> <p class="type">Trucks</p></div>
-         <div class="genre"><img class="flex-item1" src="trucks/t6.jpg" alt=""> <p class="type">engins</p></div>
-         <div class="genre"><img class="flex-item1" src="trucks/t4.jpg" alt=""> <p class="type">utilitaire</p></div>
+         <div class="genre"><img class="flex-item1" src="cars/car1.jpg" alt="" id="citadine" onclick="cartype(this.id)"> <p class="type">citadine</p></div>
+         <div class="genre"><img class="flex-item1" src="cars/car5.jpg" alt="" id="compact" onclick="cartype(this.id)"> <p class="type">compact</p></div>
+         <div class="genre"><img class="flex-item1" src="cars/car4.jpg" alt=""  id="SUV" onclick="cartype(this.id)"> <p class="type">SUV</p></div>
+         <div class="genre"><img class="flex-item1" src="motos/bike1.jpg" alt="" id="bikes" onclick="cartype(this.id)"> <p class="type">Bikes</p></div>
+         <div class="genre"><img class="flex-item1" src="trucks/t1.jpg" alt="" id="trucks" onclick="cartype(this.id)"> <p class="type">Trucks</p></div>
+         <div class="genre"><img class="flex-item1" src="trucks/t6.jpg" alt=""  id="engins" onclick="cartype(this.id)"> <p class="type">engins</p></div>
+         <div class="genre"><img class="flex-item1" src="trucks/t4.jpg" alt="" id="utilitaire" onclick="cartype(this.id)"> <p class="type">utilitaire</p></div>
          </div>
-         <form action="">
+         <div>
              <h3 class="h31">Please select your engin</h3>
              <div class="choix">
                  <div class="radios">
-                 <input type="radio" name="radio" id="electrique">
+                 <input type="radio" name="radio" id="electrique" value="0.05" onclick="fuel(this.value)">
                  <label for="">Electrique</label> </div>
                  <div class="radios">
-                 <input type="radio" name="radio" id="hybride">
+                 <input type="radio" name="radio" id="hybride" value="0.09" onclick="fuel(this.value)">
                  <label for="">Hybride</label> </div>
                  <div class="radios">
-                 <input type="radio" name="radio" id="diesel">
+                 <input type="radio" name="radio" id="diesel" value="0.21" onclick="fuel(this.value)">
                  <label for="">Diesel</label> </div>
                  <div class="radios">
-                 <input type="radio"name="radio" id="essence">
+                 <input type="radio"name="radio" id="essence" value="0.14" onclick="fuel(this.value)">
                  <label for="">Essence</label> </div>
                  </div>
 
                  <h3>Please select your gearbox</h3>
                  <div class="choix">
                     <div class="radios">
-                     <input type="radio" name="radio">
+                     <input type="radio" name="radiogp" id="automatique" value="0.19">
                      <label for="">Automatique</label> </div>
                      <div class="radios">
-                     <input type="radio" name="radio">
+                     <input type="radio" name="radiogp" id="manuel" >
                      <label for="">Manuel</label> </div>
                      
 
@@ -64,15 +64,15 @@
                  
                  <h3>How many days ?</h3>
                  <div class="days">
-                 <input type="number" min="1"> </div>
+                 <input type="number" id="days" min="1"> </div>
                  <div>
-                    <input type="button" name="submit" value="Submit">
+                    <input type="submit" name="submit" value="Submit" onclick="calcul()">
                     
                 </div>
 
 
 
-         </form>
+            </div>
             
 
 
@@ -107,6 +107,7 @@
                 </div>
         
             </footer>
+            <script src="loca.js"></script>
     
 </body>
 </html>
