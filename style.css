@@ -137,6 +137,17 @@ padding: 20px;
     cursor:pointer;
     margin-left: 40%;
   }
+  input[type=button] {
+    width: 20%;
+    background-color: #2B346A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    margin-left: 40%;
+  }
   input[type=text],[type=email] {
     width: 100%;
     padding: 10px 20px;
